@@ -92,6 +92,7 @@ This README corresponds to the following major steps in the notebook.
 - Verifies no cleaning is needed because:
   - No missing values
   - All numeric data
+  ![dataset](dataset.png)
 
 ### STEP 2: Simple Linear Regression
 
@@ -113,6 +114,7 @@ This README corresponds to the following major steps in the notebook.
   - Predictions and regression line
 
 This serves as a baseline using a single feature.
+![linear](linearRegression.png)
 
 ### STEP 3: Multiple Regression
 
@@ -128,7 +130,7 @@ This serves as a baseline using a single feature.
   - Residuals vs predicted plot
 
 This step shows how much performance improves when all features are used.
-
+![multiple](residualPlot.png)
 ### STEP 4: Polynomial Regression
 
 - Still uses **BMI** as the base feature.
@@ -148,7 +150,9 @@ This step shows how much performance improves when all features are used.
     - R² vs degree
 
 This illustrates how increasing polynomial degree changes model complexity and performance.
+![poly](polynomial.png)
 
+![polynomial](polyRegression.png)
 ### STEP 5: Regularization (Ridge and Lasso)
 
 - Uses **all features** again.
@@ -166,6 +170,7 @@ This illustrates how increasing polynomial degree changes model complexity and p
   - Evaluates (MAE, MSE, RMSE, R²) on test data.
   - Counts and stores the number of non-zero coefficients (active features).
   - Stores results in `results_lasso_df`.
+  ![lasso](lasso.png)
 
 - Prints Ridge and Lasso summary tables.
 - Explains how alpha affects:
@@ -187,6 +192,9 @@ This illustrates how increasing polynomial degree changes model complexity and p
   - Predicted vs actual plots comparing Ridge and Lasso at α = 1
 
 This step demonstrates how regularization can improve generalization and perform feature selection (Lasso).
+![ridgevslasso](ridgeVsLasso.png)
+
+![predictions](predictions.png)
 
 ### STEP 6: Model Comparison and Analysis
 
@@ -223,10 +231,12 @@ This step demonstrates how regularization can improve generalization and perform
     - Future improvements (feature engineering, more data, ensembles, CV for alpha)
     - Lessons learned about regression and regularization
 
+![comparison](comparison.png)
 ---
 
 ## 6. Key Results and Insights (High-Level)
 
+![summary](summary.png)
 - Using only BMI provides limited predictive power compared to multivariate models.
 - Multiple Linear Regression with all features significantly improves performance over simple linear regression.
 - Polynomial Regression shows that adding non-linearity can help, but higher degrees may yield diminishing returns or overfitting.
@@ -235,6 +245,7 @@ This step demonstrates how regularization can improve generalization and perform
   - Add robustness and interpretability, especially Lasso due to feature selection.
 - The best-performing model in the comparison (by R²) is identified at the end of the notebook, along with its MAE, MSE, and RMSE.
 
+![conclusion](bestModel.png)
 
 ## 8. How to Adapt or Extend
 
