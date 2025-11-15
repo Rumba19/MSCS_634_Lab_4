@@ -1,6 +1,6 @@
 # Regression Analysis Lab: Linear, Multiple, Polynomial, Ridge, and Lasso Regression
 
-## 1. Overview
+## Overview
 
 This lab implements and compares several regression techniques on the `Diabetes` dataset from `scikit-learn`.  
 The notebook walks through a complete workflow:
@@ -16,7 +16,7 @@ The goal is to predict disease progression and evaluate how different regression
 
 ---
 
-## 2. Dataset
+## Dataset
 
 - **Source:** `sklearn.datasets.load_diabetes`
 - **Samples:** 442 patients  
@@ -30,34 +30,6 @@ The notebook confirms:
 
 ---
 
-## 3. Environment and Dependencies
-
-### 3.1. Python Version
-
-- Python 3.x
-
-### 3.2. Required Libraries
-
-Install the required packages (if not already available):
-
-```bash
-pip install numpy pandas matplotlib seaborn scikit-learn
-```
-
-### 3.3. Libraries Used
-
-- `numpy`, `pandas` – data handling and numerical operations  
-- `matplotlib`, `seaborn` – visualization  
-- `scikit-learn`:
-  - `load_diabetes` (dataset)
-  - `train_test_split` (data splitting)
-  - `LinearRegression`, `Ridge`, `Lasso` (models)
-  - `PolynomialFeatures`, `StandardScaler` (preprocessing)
-  - `mean_absolute_error`, `mean_squared_error`, `r2_score` (metrics)
-
----
-
-## 4. How to Run
 
 1. Open a terminal and navigate to the project directory.
 2. Launch Jupyter:
@@ -74,7 +46,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn
 
 ---
 
-## 5. Notebook Structure and Steps
+##  Notebook Structure and Steps
 
 This README corresponds to the following major steps in the notebook.
 
@@ -234,7 +206,7 @@ This step demonstrates how regularization can improve generalization and perform
 ![comparison](comparison.png)
 ---
 
-## 6. Key Results and Insights (High-Level)
+## Key Results and Insights (High-Level)
 
 ![summary](summary.png)
 - Using only BMI provides limited predictive power compared to multivariate models.
@@ -247,7 +219,7 @@ This step demonstrates how regularization can improve generalization and perform
 
 ![conclusion](bestModel.png)
 
-## 8. How to Adapt or Extend
+##  How to Adapt or Extend
 
 - Swap the Diabetes dataset for other regression datasets (e.g., Boston housing, synthetic data).
 - Add:
@@ -258,7 +230,7 @@ This step demonstrates how regularization can improve generalization and perform
 
 ---
 
-## 9. References
+##  References
 
 - Scikit-learn documentation:
   - `load_diabetes`, regression models, preprocessing, and metrics  
